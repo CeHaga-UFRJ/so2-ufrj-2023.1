@@ -21,8 +21,6 @@ int isopen(int fd) {
 
 int main (void){
     int nopen, fd;
-    FILE *f;
-    f = fopen("nopen.c", "r");
     for (nopen = fd = 0; fd < getdtablesize(); fd++){
         if (isopen (fd)) nopen++;
     }
